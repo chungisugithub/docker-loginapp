@@ -17,10 +17,10 @@ after_success:
 deploy:
     provider: elasticbeanstalk
     region: ap-northeast-2
-    app: docker-loginapp
-    env: Dockerloginapp-env
+    app: docker-multi-container-app
+    env: Dockermulticontainerapp-env
     bucket_name: elasticbeanstalk-ap-northeast-2-908885700562
-    bucket_path: docker-loginapp
+    bucket_path: docker-multi-container-app
     on:
         branch: master
     access_key_id: $AWS_ACCESS_KEY
