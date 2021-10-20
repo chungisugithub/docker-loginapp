@@ -18,9 +18,11 @@ deploy:
     provider: elasticbeanstalk
     region: ap-northeast-2
     app: docker-multi-container-app
-    env: Dockermulticontainerapp-env
+    env: Dockermulticontainerapp-env-1
+    version_label: "docker-multi-container-app-v1"
     bucket_name: elasticbeanstalk-ap-northeast-2-908885700562
     bucket_path: docker-multi-container-app
+
     on:
         branch: master
     access_key_id: $AWS_ACCESS_KEY
